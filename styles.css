@@ -7,13 +7,45 @@
 }
 
 section {
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100vh;
   overflow: hidden;
+}
+section .container {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
   position: relative;
+}
+section .container h2 {
+  font-size: 15vw;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+section .container .black {
+  background: #fff;
+  width: 100%;
+  height: 40vh;
+  mix-blend-mode: difference;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-100%, -50%);
+  animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-100%, -50%);
+  }
+  100% {
+    transform: translate(100%, -50%);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
